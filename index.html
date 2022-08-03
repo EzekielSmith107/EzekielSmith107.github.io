@@ -23,7 +23,7 @@
             <div class="right-header">
                 <h1 class="name">
                     Hi, I'm <span>Ezekiel Smith.</span>
-                    A Gameplay Developer.
+                    A Gameplay Programmer.
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -67,18 +67,40 @@
                 </div>
                 <div class="tool-box">
                     <div class="tool-container">
-                        <p class="tool-title">Javascript</p>
-                        <p class="tool-title">HTML5</p>
-                        <p class="tool-title">CSS</p>
-                        <p class="tool-title">Node.js</p>
-                        <p class="tool-title">PostgreSQL</p>
-                        <p class="tool-title">SASS</p>
-                        <p class="tool-title">Postman</p>
-                        <p class="tool-title">axios</p>
-                        <p class="tool-title">Bcrypt</p>
-                        <p class="tool-title">Git</p>
-                        <p class="tool-title">Github</p>
-                        <p class="tool-title">Jest</p>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-square-js"></i>
+                            <p class="tool-title">Javascript</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-html5"></i>
+                            <p class="tool-title">HTML5</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-css3"></i>
+                            <p class="tool-title">CSS3</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-node-js"></i>
+                            <p class="tool-title">Node.js</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <p class="tool-title">Git</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-github"></i>
+                            <p class="tool-title">Github</p>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-sass"></i>
+                            <p class="tool-title">SASS</p>
+                        </div>
+                        <div class="tool-card">
+                            <p class="tool-title">PostgreSQL</p>
+                        </div>
+                        <div class="tool-card">
+                            <p class="tool-title">Postman</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,11 +118,10 @@
                         <img src="/img/map.png" alt="Defend the Dojo">
                     </div>
                     <div class="hover-items">
-                        <h5>"Defend the Dojo"</h5>
+                        <h3>"Defend the Dojo"</h3>
                         <p>
-                            A classic tower defense game built with Javascript, HTML, CSS, Node.js, PostgreSQL, and express.
+                            A classic tower defense game built with Javascript, HTML, CSS, Node.js, and PostgreSQL.
                         </p>
-                        <h5>Source Code, Live Site, and Demo</h5>
                         <div class="icons">
                             <a href="https://github.com/EzekielSmith107/foundations-capstone-f25" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
@@ -123,22 +144,19 @@
                 </div>
                 <div class="contact-content-container">
                     <div class="contact">
-                        <form action="" class="contact-form">
+                        <form action="https://formsubmit.co/521703a2b802a7b8c827f4d2b504912d" method="post" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="Your Name">
-                                <input type="email" required placeholder="Your Email">
+                                <input type="text" name="name" required placeholder="Your Name">
+                                <input type="email" name="email" required placeholder="Your Email">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="Enter Subject">
+                                <input type="text" name="subject" required placeholder="Enter Subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="20" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea required name="message" cols="20" rows="10" placeholder="Message..."></textarea>
                             </div>
                             <div class="submit-btn">
-                                <a href="" class="main-btn">
-                                    <span class="btn-text">Download Resume</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
-                                </a>
+                                <button type="submit" class="send">Send</button>
                             </div>
                         </form>
                     </div>
@@ -162,6 +180,9 @@
         <div class="control control-5" data-id="contact">
             <i class="fa-solid fa-envelope"></i>
         </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fa-solid fa-circle-half-stroke"></i>
     </div>
     <script src="./index.js"></script>
 </body>

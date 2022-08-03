@@ -22,6 +22,20 @@
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+.light-mode {
+    --color-primary: #FFFFFF;
+    --color-secondary: #F56692;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #f8f8f8;
+    --color-grey-6: #12181b;
+}
+
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -96,6 +110,7 @@ section {
     }
 }
 
+/*Controls*/
 .controls {
     position: fixed;
     z-index: 10;
@@ -130,6 +145,30 @@ section {
             color: var(--color-grey-2);
             pointer-events: none;
         }
+    }
+}
+
+.theme-btn {
+    top: 5%;
+    right: 3%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow-1);
+    transition: all .1s ease-in-out;
+    &:active {
+        transform: translateY(-5px);
+    }
+    i {
+        font-size: 1.4rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
     }
 }
 
@@ -212,22 +251,35 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 1rem;
         .tool-container {
             display: flex;
             flex-wrap: wrap;
             width: fit-content;
             height: fit-content;
             border-radius: 100px / 50px;
-            padding: 3rem;
-            border: #000 solid 3px;
-            .tool-title {
+            padding: 1rem;
+            border: var(--color-secondary) solid 3px;
+            .tool-card {
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                font-weight: 500;
-                padding-top: 1rem;
-                padding-right: 1rem;
-                flex: 1 1 33%;
+                padding: 1rem 1rem;
+                .tool-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 500;
+                    padding-top: .5rem;
+                    padding-right: 1rem;
+                    flex: 1 1 33%;
+                }
+                i {
+                    font-size: 2rem;
+                    color: var(--color-white);
+                    margin: 0 1rem;
+                }
             }
         }
     }
@@ -267,8 +319,8 @@ section {
             opacity: 0;
             transform: scale(0);
             transition: var(--transition-a-4s-eio);
-            h5 {
-                font-size: 1.2rem;
+            h3 {
+                font-size: 1.5rem;
                 color: var(--color-white);
                 margin-bottom: 1rem;
             }
@@ -276,12 +328,13 @@ section {
                 text-align: center;
                 line-height: 2rem;
                 padding: .5rem;
-                color: var(--color-grey-1);
+                color: var(--color-white);
             }
             .icons {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding-top: 1rem;
                 .icon {
                     background-color: var(--color-primary);
                     border-radius: 50%;
@@ -332,18 +385,18 @@ section {
                 font-weight: inherit;
                 font-size: inherit;
                 font-family: inherit;
-                padding: .8rem 1.1rem;
+                padding: .275rem 1.1rem;
                 outline: none;
                 border: none;
                 background-color: var(--color-grey-5);
-                width: 150%;
+                width: 100%;
                 color: var(--color-white);
                 resize: none;
             }
         }
         .i-c-2 {
             display: flex;
-            width: 150%;
+            width: 100%;
             :last-child {
                 margin-left: 1.5rem;
             }
@@ -351,6 +404,22 @@ section {
         .submit-btn {
             display: flex;
             justify-content: flex-start;
+            .send {
+                color: var(--color-secondary);
+                background-color: var(--color-primary);
+                border: 2px solid var(--color-secondary);
+                border-radius: 0px;
+                padding: .6rem 2rem;
+                font-family: inherit;
+                font-size: inherit;
+                letter-spacing: 1px;
+                cursor: pointer;
+                box-shadow: inset 0 0 0 0 var(--color-white);
+                transition: ease-out 0.4s;
+                &:hover {
+                    box-shadow: inset 400px 0 0 0 var(--color-white);
+                }
+            }
         }
     }
 }
