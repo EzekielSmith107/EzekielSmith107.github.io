@@ -497,4 +497,55 @@ section {
 }
 .main-title h2 span {
   color: var(--color-secondary);
+}
+
+/*Top Tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 110px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+  margin-right: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*Bottom Tooltip*/
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 110px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
